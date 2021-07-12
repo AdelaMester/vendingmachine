@@ -1,0 +1,31 @@
+.bigdiv {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.cashbox {
+    position: absolute;
+    right:0px;
+    width: 600px;
+    height: 800px;
+    margin:auto;
+}
+.menu {
+    position: absolute;
+    width: 1200px;
+    height: 800px;
+    margin:auto;
+}
+.menu img{
+    border-radius: 50%;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+.center img {
+  border-radius: 50%;
+}

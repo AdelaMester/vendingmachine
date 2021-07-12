@@ -1,0 +1,68 @@
+
+<h1 style="text-align:center">Coffees</h1>
+<div class="bigdiv">
+    <a href="#/"><img src="images/back.jpg" alt="back" width="60" height="60" style="padding:5px"></a>
+    <div class="menu">
+        <table>
+            <tr>
+                <td style="text-align:center">
+                    <a href="#/coffee"><img ng-click="buyProduct(3)" src="images/latte.jpg" alt="coffee" width="500" height="300" style="padding:10px"></a>
+                    {{ coffees[0].name }}: {{ coffees[0].price | currency: '£' }}
+                </td>
+                <td style="text-align:center">
+                    <a href="#/coffee"><img ng-click="buyProduct(2)" src="images/americano.jpg" alt="drinks" width="500" height="300" style="padding:10px"></a>
+                    {{ coffees[1].name }}: {{ coffees[1].price | currency: '£' }}
+                </td>
+            </tr>
+            <tr>
+                <br /><br /><br />
+                <td style="text-align:center">
+                    <a href="#/coffee"><img ng-click="buyProduct(2)" src="images/espresso.jpg" alt="snacks" width="500" height="300" style="padding:10px"></a>
+                    {{ coffees[2].name }}: {{ coffees[2].price | currency: '£' }}
+                </td>
+                <td style="text-align:center">
+                    <a href="#/coffee"><img ng-click="buyProduct(4)" src="images/mocha.jpg" alt="sweets" width="500" height="300" style="padding:10px"></a>
+                    {{ coffees[3].name }}: {{ coffees[3].price | currency: '£' }}
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="cashbox">
+        <table>
+            <h2>Click to insert coins</h2>
+            <tr>
+                <td>
+                    <img ng-click="addCredits(2)" src="images/two-pound.jpg" alt="coin" height="90px" width="90px">
+                </td>
+                <td>
+                    <img ng-click="addCredits(1)" src="images/one-pound.jpg" alt="coin" height="90px" width="120px">
+                </td>
+                <td>
+                    <img ng-click="addCredits(0.5)" src="images/50p.jpg" alt="coin" height="90px" width="90px">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Total</h2>
+                </td>
+                <td>
+                   <h2>{{money | currency:'£'}}</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Change</h2>
+                </td>
+                <td>
+                    <h2>{{change | currency:'£'}}</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>{{message}}</h2>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>
