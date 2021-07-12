@@ -81,8 +81,8 @@
     "test-cov": "nyc --reporter=html --reporter=text npm test"
   },
   "version": "3.1.0"
-}
-"engines": {
+  "engines": {
     "node": ">= 6.9.4",
     "npm": ">= 4.4.0"
   }
+}
